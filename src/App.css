@@ -1,0 +1,95 @@
+:root {
+  --nexus-primary: #4f46e5;
+  --nexus-primary-dark: #4338ca;
+  --nexus-primary-soft: #eef2ff;
+
+  --nexus-bg: #f8fafc;
+  --nexus-surface: #ffffff;
+  --nexus-surface-soft: #f8fafc;
+  --nexus-surface-muted: #f1f5f9;
+
+  --nexus-text: #0f172a;
+  --nexus-text-secondary: #475569;
+  --nexus-text-muted: #64748b;
+  --nexus-text-subtle: #94a3b8;
+
+  --nexus-border: #e2e8f0;
+  --nexus-border-soft: #edf2f7;
+
+  --nexus-success: #16a34a;
+  --nexus-success-soft: #dcfce7;
+
+  --nexus-warning: #ea580c;
+  --nexus-warning-soft: #fff7ed;
+
+  --nexus-danger: #dc2626;
+  --nexus-danger-soft: #fee2e2;
+
+  --nexus-radius-sm: 8px;
+  --nexus-radius-md: 12px;
+  --nexus-radius-lg: 16px;
+  --nexus-radius-xl: 24px;
+
+  --nexus-shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.05);
+  --nexus-shadow-md: 0 12px 30px rgba(15, 23, 42, 0.07);
+  --nexus-shadow-lg: 0 24px 60px rgba(15, 23, 42, 0.1);
+
+  --nexus-transition: 180ms ease;
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--nexus-bg);
+  color: var(--nexus-text);
+}
+
+::selection {
+  background: rgba(79, 70, 229, 0.16);
+  color: var(--nexus-text);
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--nexus-primary);
+  outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
